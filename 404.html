@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Honorat Andrianirina — Portfolio</title>
+<script>
+  // Toute adresse inconnue (ex. /portfolio en minuscules) renvoie vers le portfolio.
+  var rest = location.pathname.replace(/^\/portfolio(\/|$)/i, '');
+  if (rest === location.pathname) rest = '';
+  location.replace('/Portfolio/' + rest + location.search + location.hash);
+</script>
+</head>
+<body style="font-family:system-ui,sans-serif;padding:24px">
+<p>Page introuvable. <a href="/Portfolio/">Ouvrir le portfolio de Honorat Andrianirina</a></p>
+</body>
+</html>
